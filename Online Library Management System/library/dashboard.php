@@ -46,7 +46,7 @@ else{?>
             
                  <div class="col-md-3 col-sm-3 col-xs-6">
                       <div class="alert alert-info back-widget-set text-center">
-                            <i class="fa fa-bars fa-5x"></i>
+                            <em class="fa fa-bars fa-5x"></em>
 <?php 
 $sid=$_SESSION['stdid'];
 $sql1 ="SELECT id from tblissuedbookdetails where StudentID=:sid";
@@ -64,7 +64,7 @@ $issuedbooks=$query1->rowCount();
              
                <div class="col-md-3 col-sm-3 col-xs-6">
                       <div class="alert alert-warning back-widget-set text-center">
-                            <i class="fa fa-recycle fa-5x"></i>
+                            <em class="fa fa-recycle fa-5x"></em>
 <?php 
 $rsts=0;
 $sql2 ="SELECT id from tblissuedbookdetails where StudentID=:sid and RetrunStatus=:rsts";
