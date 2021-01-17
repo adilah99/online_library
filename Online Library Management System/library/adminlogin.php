@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-if($_SESSION['login']!=''){
+if($_SESSION['alogin']!=''){
 $_SESSION['alogin']='';
 }
 if(isset($_POST['login']))
@@ -81,7 +81,7 @@ echo "<script>alert('Invalid Details');</script>";
 </div>
  <div class="form-group">
 <label>Verification code : </label>
-<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">
+<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php" alt="captcha">
 </div>  
 
  <button type="submit" name="login" class="btn btn-info">LOGIN </button>
@@ -103,6 +103,6 @@ echo "<script>alert('Invalid Details');</script>";
     <script src="assets/js/bootstrap.js"></script>
       <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
-</script>
+
 </body>
 </html>
