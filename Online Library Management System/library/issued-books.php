@@ -65,12 +65,12 @@ header('location:manage-books.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Book Name</th>
-                                            <th>ISBN </th>
-                                            <th>Issued Date</th>
-                                            <th>Return Date</th>
-                                            <th>Fine in(USD)</th>
+                                            <th id="#">#</th>
+                                            <th id="bookName">Book Name</th>
+                                            <th id="ISBN">ISBN</th>
+                                            <th id="issuedDate">Issued Date</th>
+                                            <th id="returnDate">Return Date</th>
+                                            <th id="fineIn">Fine in(USD)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
