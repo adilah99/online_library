@@ -113,10 +113,11 @@ header('location:manage-books.php');
                                         <tr>
                                             <th id="#">#</th>
                                             <th id="bookName">Book Name</th>
+                                            <th id="category">Category</th>
+                                            <th id="author">Author</th>
                                             <th id="ISBN">ISBN</th>
-                                            <th id="issuedDate">Issued Date</th>
-                                            <th id="returnDate">Return Date</th>
-                                            <th id="fineIn">Fine in(USD)</th>
+                                            <th id="price">Price</th>
+                                            <th id="action">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
