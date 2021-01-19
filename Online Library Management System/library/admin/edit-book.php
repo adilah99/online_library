@@ -112,7 +112,9 @@ else
 {
     ?>  
 <option value="<?php echo htmlentities($row->id);?>"><?php echo htmlentities($row->CategoryName);?></option>
- <?php }}} ?> 
+ <?php }
+}
+} ?> 
 </select>
 </div>
 
@@ -138,7 +140,9 @@ continue;
 
     ?>  
 <option value="<?php echo htmlentities($ret->id);?>"><?php echo htmlentities($ret->AuthorName);?></option>
- <?php }}} ?> 
+ <?php }
+}
+} ?> 
 </select>
 </div>
 
@@ -152,7 +156,8 @@ continue;
  <label>Price in USD<span style="color:red;">*</span></label>
  <input class="form-control" type="text" name="price" value="<?php echo htmlentities($result->BookPrice);?>"   required="required" />
  </div>
- <?php }} ?>
+ <?php }
+} ?>
 <button type="submit" name="update" class="btn btn-info">Update </button>
 
                                     </form>
