@@ -111,12 +111,12 @@ header('location:manage-categories.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Category</th>
-                                            <th>Status</th>
-                                            <th>Creation Date</th>
-                                            <th>Updation Date</th>
-                                            <th>Action</th>
+                                            <th id="#">#</th>
+                                            <th id="category">Category</th>
+                                            <th id="status">Status</th>
+                                            <th id="creationDate">Creation Date</th>
+                                            <th id="updationDate">Updation Date</th>
+                                            <th id="action">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -141,7 +141,7 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($result->UpdationDate);?></td>
                                             <td class="center">
 
-                                            <a href="edit-category.php?catid=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
+                                            <a href="edit-category.php?catid=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><em class="fa fa-edit "></em> Edit</button> 
                                           <a href="manage-categories.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
                                             </td>
                                         </tr>
