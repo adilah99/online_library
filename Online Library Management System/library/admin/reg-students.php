@@ -83,14 +83,15 @@ header('location:reg-students.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Student ID</th>
-                                            <th>Student Name</th>
-                                            <th>Email id </th>
-                                            <th>Mobile Number</th>
-                                            <th>Reg Date</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
+                                            <th id="#">#</th>
+                                            <th id="studentID">Student ID</th>
+                                            <th id="studentName">Student Name</th>
+                                            <th id="emailID">Email id </th>
+                                            <th id="mobileNo">Mobile Number</th>
+                                            <th id="regDate">Reg Date</th>
+                                            <th id="status">Status</th>
+                                            <th id="action">Action</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -130,7 +131,8 @@ foreach($results as $result)
                                           
                                             </td>
                                         </tr>
- <?php $cnt=$cnt+1;}} ?>                                      
+ <?php $cnt=$cnt+1;
+}} ?>                                      
                                     </tbody>
                                 </table>
                             </div>
