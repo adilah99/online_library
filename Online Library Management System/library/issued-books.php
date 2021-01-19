@@ -103,7 +103,9 @@ foreach($results as $result)
                                               <td class="center"><?php echo htmlentities($result->fine);?></td>
                                          
                                         </tr>
- <?php $cnt=$cnt+1;}} ?>                                      
+ <?php $cnt=$cnt+1;
+}
+} ?>                                      
                                     </tbody>
                                 </table>
                             </div>
