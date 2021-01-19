@@ -111,13 +111,12 @@ header('location:manage-books.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Book Name</th>
-                                            <th>Category</th>
-                                            <th>Author</th>
-                                            <th>ISBN</th>
-                                            <th>Price</th>
-                                            <th>Action</th>
+                                            <th id="#">#</th>
+                                            <th id="bookName">Book Name</th>
+                                            <th id="ISBN">ISBN</th>
+                                            <th id="issuedDate">Issued Date</th>
+                                            <th id="returnDate">Return Date</th>
+                                            <th id="fineIn">Fine in(USD)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -139,7 +138,7 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($result->BookPrice);?></td>
                                             <td class="center">
 
-                                            <a href="edit-book.php?bookid=<?php echo htmlentities($result->bookid);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
+                                            <a href="edit-book.php?bookid=<?php echo htmlentities($result->bookid);?>"><button class="btn btn-primary"><em class="fa fa-edit "></em> Edit</button> 
                                           <a href="manage-books.php?del=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Are you sure you want to delete?');"" >  <button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
                                             </td>
                                         </tr>
